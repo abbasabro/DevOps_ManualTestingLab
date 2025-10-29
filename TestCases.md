@@ -1,0 +1,7 @@
+| Test Case ID | Scenario                            | Precondition | Steps to Execute                                                      | Expected Result                              | Actual Result           | Status |
+| ------------ | ----------------------------------- | ------------ | --------------------------------------------------------------------- | -------------------------------------------- | ----------------------- | ------ |
+| **TC001**    | Verify login with valid credentials | App is open  | 1. Enter valid username and password <br> 2. Click Login              | User redirected to Dashboard                 | Redirect successful     |  Pass |
+| **TC002**    | Verify login with invalid password  | App is open  | 1. Enter valid username and wrong password <br> 2. Click Login        | Error message “Invalid password” displayed   | Error message displayed |  Pass |
+| **TC003**    | Verify login with empty fields      | App is open  | 1. Leave fields blank <br> 2. Click Login                             | Warning “Please fill out this field” appears | Warning displayed       |  Pass |
+| **TC004**    | Verify password visibility toggle   | App is open  | 1. Click on "Show Password" icon                                      | Password should be visible in plain text     | Toggle works correctly  |  Pass |
+| **TC005**    | Verify remember me functionality    | App is open  | 1. Enter credentials <br> 2. Check “Remember Me” <br> 3. Refresh page | Username field retains value                 | Username retained       |  Fail |
